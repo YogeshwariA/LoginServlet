@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+<html>
+<head>
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="2" style="font-weight: bold;">Available Servlets:</td>
+		</tr>
+		<tr>
+			<td>JavaScriptExamples</td>
+		</tr>
+	</table>
+</body>
+<script type="text/javascript">
+	console.log("helloo");
+	var number;
+	console.log(number);
+	var name = null;
+	console.log(name);
+	var valueOne = 3;
+	var valueTwo = "3";
+
+	/* if (valueOne == valueTwo) {
+		alert('ValueOne and valueTwo are same using Equality.');
+	} else {
+		alert('ValueOne and valueTwo are not same using Equality.');
+	} */
+
+	if (valueOne === valueTwo) {
+		alert('ValueOne and valueTwo are same using Identity.');
+
+	} else {
+		alert('ValueOne and valueTwo are not same using Indentity.');
+	}
+	var object = {};
+	object.firstName = "Yogehwari";
+	object.lastName = "Arjunan";
+	console.log(object.firstName);
+	console.log(object.lastName);
+
+	var object1 = {
+		firstName : "Satish",
+		lastName : "Krishnan"
+	};
+	console.log(object1.firstName);
+
+	var object2 = new Object();
+	object2.firstName = "sugana";
+	object2.lastName = "ganesh";
+	console.log(object2.firstName);
+
+	var name = object2.firstName;
+	object2["name"] = "shivani";
+	console.log(object2["firstName"]);
+	console.log(object2["name"]);
+
+	var object3 = {
+		firstName : "malleshwari",
+		age : 24,
+		myInfo : function() {
+			console.log("FirstName:" + this.firstName);
+			console.log("Age:" + this.age);
+		}
+	};
+	object3.myInfo();
+	var student = {
+		firstName : "Yogesh",
+		studentId : 12345,
+		marks : [ 10, 20, 30, 40, 50 ],
+		date : "12/03/2017",
+		schoolName : "g.h.schools"
+	};
+	
+console.log(student);
+	
+</script>
+</html>
